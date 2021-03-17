@@ -111,7 +111,9 @@
                 <li><button type="button">Офсетная печать</button></li>
                 <li><button type="button">Дизайн</button></li>
             </ul>
-            <button type="button">Тонкая бумага 130 г/м2</button>
+            <select name="select" id="/">
+                <option value="">Тонкая бумага 130 г/м2</option>
+            </select>
             <p>Срок печати цифровым способом 1 - 2 дня</p>
             <table>
                 <thead>
@@ -275,17 +277,17 @@
         </section>
         <!-- Заяка -->
         <section>
-                    <h2>Заявка</h2>
-                    <p>Оставьте заявку, наш менеджер обработает её и свяжется с вами в ближайшее время
-                    </p>
-                    <ul>
-                        <li><button type="button">Имя</button></li>
-                        <li><button type="button">Телефон</button></li>
-                        <li><button type="button">Комментарий к заявке</button></li>
-                        <li><button type="button">Прикрепить файл</button></li>
-                        <li><button type="button">отправить</button></li>
-                    </ul>
-                    <p>Нажимая «Отправить» вы даёте согласие на обработку персональных данных</p>
+            <h2>Заявка</h2>
+            <p>Оставьте заявку, наш менеджер обработает её и свяжется с вами в ближайшее время
+            </p>
+            <form action="">
+                <input type="text" name="username" placeholder="Имя"> <br>
+                <input type="tel" name="telephone" placeholder="Телефон"> <br>
+                <input type="text" name="comment" placeholder="Комментарий к заявке"> <br>
+                <input type="file" name="file">
+                <button type="button">отправить</button>
+                <p>Нажимая «Отправить» вы даёте согласие на обработку персональных данных</p>
+            </form>
         </section>
         <button type="button">Открытки</button>
     </main>

@@ -214,14 +214,14 @@
             <h2>Заявка</h2>
             <p>Оставьте заявку, наш менеджер обработает её и свяжется с вами в ближайшее время
             </p>
-            <ul>
-                <li><button type="button">Имя</button></li>
-                <li><button type="button">Телефон</button></li>
-                <li><button type="button">Комментарий к заявке</button></li>
-                <li><button type="button">Прикрепить файл</button></li>
-                <li><button type="button">отправить</button></li>
-            </ul>
-            <p>Нажимая «Отправить» вы даёте согласие на обработку персональных данных</p>
+            <form action="">
+                <input type="text" name="username" placeholder="Имя"> <br>
+                <input type="tel" name="telephone" placeholder="Телефон"> <br>
+                <input type="text" name="comment" placeholder="Комментарий к заявке"> <br>
+                <input type="file" name="file">
+                <button type="button">отправить</button>
+                <p>Нажимая «Отправить» вы даёте согласие на обработку персональных данных</p>
+            </form>
         </section>
         <button type="button">Бизнес полиграфия</button>
     </main>
