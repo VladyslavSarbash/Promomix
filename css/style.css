@@ -1,0 +1,90 @@
+:root {
+    --main-font: "TT Norms", sans-serif;
+    --main-red: #E52322;
+    --main-grey:  #B0B6BF;
+    --main-black: #1F2C37;
+
+}
+
+body {
+    color: var(--main-black);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+}
+
+button {
+    text-transform: inherit;
+    font-weight: inherit;
+}
+
+button:hover,
+button:focus,
+a:focus,
+a:hover {
+    color: var(--main-red);
+}
+
+.header {
+    background-color: grey;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid tomato;
+}
+
+.navigation {
+    display: flex;
+}
+
+.logo,
+.list-item button,
+.list-item a {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.navigation .list {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    /* width: 570px; */
+}
+
+.list-item:not(:last-child) {
+    margin-right: 120px;
+}
+
+.list-item button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    /* background-color: tomato; */
+}
+.list-item img {
+    margin-right: 12px;
+}
+
+.list .list-item:first-child {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.list .list-item:last-child {
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.list .list-item:nth-child(2) {
+    font-size: 15px;
+}
+
