@@ -3,10 +3,12 @@
     --main-red: #E52322;
     --main-grey:  #B0B6BF;
     --main-black: #1F2C37;
+    --main-white: #ffffff;
 
 }
 
 body {
+    width: 1600px;
     color: var(--main-black);
     font-family: var(--main-font);
     font-size: 16px;
@@ -67,24 +69,66 @@ a:hover {
 
     /* background-color: tomato; */
 }
-.list-item img {
+.navigation .list-item img {
     margin-right: 12px;
 }
 
-.list .list-item:first-child {
+.navigation .list-item:first-child {
     font-size: 16px;
     display: flex;
     align-items: center;
     text-transform: capitalize;
 }
 
-.list .list-item:last-child {
+.navigation .list-item:last-child {
     font-weight: 700;
     font-size: 13px;
     text-transform: uppercase;
 }
 
-.list .list-item:nth-child(2) {
+.navigation .list-item:nth-child(2) {
     font-size: 15px;
 }
 
+.hero {
+    /* padding-left: 100px; */
+    background: url(../image/Rectangle\ 5.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 568px;
+    padding-bottom: 30px;
+    border: 1px solid tomato;
+}
+
+.hero h1{
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 1.2;
+    padding-bottom: 40px;
+    color: var(--main-white);
+}
+
+.hero h1 span {
+    color: var(--main-red);
+    text-transform: capitalize;
+}
+
+
+
+.social-list {
+    display: flex;
+    color: var(--main-white);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.social-list li:not(:last-child) {
+    margin-right: 50px;
+}
