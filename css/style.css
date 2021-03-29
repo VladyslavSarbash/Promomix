@@ -4,7 +4,7 @@
     --main-grey:  #B0B6BF;
     --main-black: #1F2C37;
     --main-white: #ffffff;
-
+    --bg-color: #F2F4F7;
 }
 
 body {
@@ -29,14 +29,19 @@ a:hover {
     color: var(--main-red);
 }
 
-.header {
-    background-color: grey;
-}
-
 .container {
     width: 1200px;
-    margin: 0 auto;
-    border: 1px solid tomato;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 1px solid tomato; */
+}
+
+.section {
+    margin-bottom: 200px;
+}
+
+.bg-page {
+    background-color: var(--bg-color);
 }
 
 .navigation {
@@ -66,7 +71,6 @@ a:hover {
     background: transparent;
     border: none;
     cursor: pointer;
-
     /* background-color: tomato; */
 }
 .navigation .list-item img {
@@ -90,9 +94,16 @@ a:hover {
     font-size: 15px;
 }
 
+.icon-header {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 .hero {
     /* padding-left: 100px; */
     background: url(../image/Rectangle\ 5.jpg);
+    min-width: 1500px;
+    min-height: 800px;
     background-repeat: no-repeat;
     background-position: right;
     background-size: auto;
@@ -104,7 +115,7 @@ a:hover {
     align-items: flex-end;
     padding-top: 568px;
     padding-bottom: 30px;
-    border: 1px solid tomato;
+    /* border: 1px solid tomato; */
 }
 
 .hero h1{
@@ -131,4 +142,146 @@ a:hover {
 
 .social-list li:not(:last-child) {
     margin-right: 50px;
+}
+
+/* <!-- Ключевые направления< --> */
+
+.directions p {
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--main-grey);
+    margin-bottom: 20px;
+}
+
+.directions h2 {
+    font-weight: 500;
+    font-size: 37px;
+    line-height: 1.2;
+    margin-bottom: 100px;
+}
+
+.directions h2 span {
+    color: var(--main-red);
+}
+
+.directions-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -60px;
+    margin-bottom: -60px;
+}
+
+.directions-list li {
+    margin-left: 60px;
+    margin-bottom: 60px;
+}
+
+.directions-list li a {
+    display: flex;
+    width: 255px;
+    height: 255px;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.directions-items a:nth-child(1) {
+    padding: 40px 125px 42px 40px;
+}
+
+.directions-items a:nth-child(2) {
+    padding: 40px 45px 42px 40px;
+}
+
+.directions-items a:nth-child(3) {
+    padding: 40px 55px 42px 40px;
+}
+
+.directions-items a:nth-child(4) {
+    padding: 40px 107px 42px 40px;
+}
+
+.directions-items a:nth-child(5) {
+    padding: 40px 110px 42px 40px;
+}
+
+.directions-items a:nth-child(6) {
+    padding: 40px 73px 42px 40px;
+}
+
+.directions-items a:nth-child(7) {
+    padding: 40px 73px 42px 40px;
+}
+
+.directions-items a:nth-child(8) {
+    padding: 40px 120px 67px 40px;
+}
+
+.directions-items a:hover {
+    background-color: var(--main-red);
+    color: var(--main-white);
+}
+
+.directions-icons {
+    fill: var(--main-red);
+}
+
+.directions-icons:hover {
+    fill: currentColor;
+}
+
+/* <!-- Наши преимущества --> */
+
+.advantages {
+    display: flex;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.advantages-title {
+    min-width: 570px;
+    margin-right: 60px;
+}
+
+.advantages-title p {
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--main-grey);
+    margin-bottom: 20px;
+}
+
+.advantages-title h2 {
+    max-width: 570px;
+    font-weight: 500;
+    font-size: 37px;
+    line-height: 1.2;
+}
+
+.advantages-title h2 span {
+    color: var(--main-red);
+}
+
+.advantages-list .list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .advantages-list-item {
+    display: flex;
+    flex-direction: column;
+} */
+
+.advantages-list-item p {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.advantages-list-item span {
+    font-size: 75px;
+    line-height: 1;
+    color: var(--main-red);
 }
