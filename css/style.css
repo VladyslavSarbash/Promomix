@@ -43,8 +43,6 @@ a:hover {
 }
 
 .bg-page {
-    max-width: 1500px;
-    margin-left: 100px;
     background-image: linear-gradient( 
         to right,
         #F2F4F7 100%, 
@@ -92,7 +90,8 @@ a:hover {
     background-color: var(--main-black);
 }
 
-.link-icon-idea:hover span {
+.link-icon-idea:hover span,
+.link-icon-idea:focus span {
     background-color: var(--main-red);
 }
 
@@ -100,7 +99,8 @@ a:hover {
     filter: grayscale(1);
 }
 
-.link-icon-idea:hover .icon-idea {
+.link-icon-idea:hover .icon-idea,
+.link-icon-idea:focus .icon-idea {
     filter: none;
 }
 
@@ -254,7 +254,8 @@ a:hover {
     padding: 40px 120px 67px 40px;
 }
 
-.directions-items a:hover {
+.directions-items a:hover,
+.directions-items a:focus {
     background-color: var(--main-red);
     color: var(--main-white);
 }
@@ -263,7 +264,8 @@ a:hover {
     fill: var(--main-red);
 }
 
-.directions-icons:hover {
+.directions-icons:hover,
+.directions-icons:focus {
     fill: currentColor;
 }
 
@@ -474,7 +476,8 @@ a:hover {
     margin-bottom: 65px;
 }
 
-.intresting-main  a:hover .intresting-text {
+.intresting-main  a:hover .intresting-text,
+.intresting-main  a:focus .intresting-text {
     color: var(--main-black);
 }
 
@@ -482,6 +485,83 @@ a:hover {
     filter: grayscale(1);
 }
 
-.intresting-link:hover img {
+.intresting-link:hover img,
+.intresting-link:focus img {
     filter: none;
 } 
+
+/* footer */
+
+.container-footer,
+.footer-main,
+.social-link {
+    display: flex;
+}
+
+.container-footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-main,
+.footer-link {
+    width: calc((100% - 60px) / 2);
+}
+
+.footer-link {
+    margin-right: 60px;
+}
+
+.navi-footer,
+.footer-form {
+    width: calc((100% - 60px) / 2);
+}
+
+.navi-footer {
+    margin-right: 60px;
+}
+
+.link-title-footer {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 60px;
+}
+
+.footer-link button {
+    padding: 22px 44px;
+    border: 1px solid #F2353F;
+    box-sizing: border-box;
+}
+
+.navi-footer .list li {
+    font-size: 16px;
+    line-height: 1;
+}
+
+.footer-form p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 65px;
+}
+
+.navi-footer .list li:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.social-link {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-social-link {
+    display: flex;
+}
+
+.social-link-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+.social-link-item a {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
