@@ -89,12 +89,12 @@ a:hover {
 }
 
 .icon-idea {
-    filter: grayscale(1);
+    stroke: var(--main-black);
 }
 
 .link-icon-idea:hover .icon-idea,
 .link-icon-idea:focus .icon-idea {
-    filter: none;
+    stroke: var(--main-red);
 }
 
 
