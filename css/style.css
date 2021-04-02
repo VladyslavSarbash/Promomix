@@ -474,13 +474,14 @@ a:hover {
     color: var(--main-black);
 }
 
-.intresting-link img {
-    filter: grayscale(1);
+.intresting-link svg {
+    fill: var(--main-white);
+    stroke: var(--main-black);
 }
 
-.intresting-link:hover img,
-.intresting-link:focus img {
-    filter: none;
+.intresting-link:hover svg,
+.intresting-link:focus svg {
+    stroke: var(--main-red);
 } 
 
 /* footer */
