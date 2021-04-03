@@ -63,9 +63,45 @@ a:hover {
     color: var(--main-grey);
 }
 
+.paragraph-main {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
 .text-title-color {
     color: var(--main-red);
 }
+
+/* link */
+
+.link-icon-idea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.link-icon-idea span {
+    display: block;
+    width: 1000px;
+    height: 1px;
+    background-color: var(--main-black);
+}
+
+.link-icon-idea:hover span,
+.link-icon-idea:focus span {
+    background-color: var(--main-red);
+}
+
+.icon-idea {
+    stroke: var(--main-black);
+}
+
+.link-icon-idea:hover .icon-idea,
+.link-icon-idea:focus .icon-idea {
+    stroke: var(--main-red);
+}
+
 /* ************************************** */
 
 
@@ -191,3 +227,274 @@ a:hover {
     padding-bottom: 45px;
 }
 
+/* Ключевые направления */
+
+.container-link {
+    padding-top: 50px;
+}
+
+.directions-list {
+    display: flex;
+}
+
+.directions-list li a {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    padding-left: 20px;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 11px;
+    line-height: 1.5;
+}
+.directions-items a:hover,
+.directions-items a:focus {
+    background-color: var(--main-red);
+    color: var(--main-white);
+}
+
+.directions-icons {
+    fill: var(--main-red);
+}
+
+.directions-icons:hover,
+.directions-icons:focus {
+    fill: currentColor;
+}
+
+/* <!-- Каталог и журналы, Виды каталогов --> */
+
+.container-catalogs,
+.container-type {
+    display: flex;
+}
+
+.container-catalogs .title-page {
+    font-size: 45px;
+    margin-right: 60px;
+}
+
+.container-catalogs p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.container-catalogs h1,
+.container-catalogs p,
+.container-type h2,
+.container-type p {
+    width: calc((100% - 60px) / 2);
+}
+
+.container-type .title-page {
+    margin-right: 60px;
+}
+
+/* <!-- Виды скрепления --> */
+
+.fastening,
+.fastening-list {
+    display: flex;
+}
+
+.fastening {
+    margin-bottom: 120px;
+}
+
+.fastening .title-page,
+.fastening .paragraph-main {
+    width: calc((100% - 60px) / 2);
+}
+
+.fastening .title-page {
+    margin-right: 60px;
+}
+
+.fastening-list li {
+    width: calc((100% - 180px) / 4);
+}
+
+.fastening-list li:not(:last-child) {
+    margin-right: 60px;
+}
+
+.fastening-list li img {
+    margin-bottom: 20px;
+}
+
+/* Стоимость */
+
+.cost .title-page {
+    margin-bottom: 100px;
+}
+
+.cost-list {
+    display: flex;
+    margin-bottom: 60px;
+    border-bottom: 1px solid var(--main-grey);
+}
+
+.cost-list li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.cost-list li button {
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    border: 0;
+    background-color: var(--main-white);
+    cursor: pointer;
+}
+
+.cost-list li button:hover,
+.cost-list li button:focus {
+    border-bottom: 2px solid var(--main-red);
+}
+
+.cost-select {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.cost-select div,
+.cost-select p {
+    width: calc((100% - 60px) / 2);
+}
+
+.cost-select select {
+    width: 360px;
+    height: 55px;
+    border: 1px solid var(--main-black);
+    cursor: pointer;
+}
+
+.cost-select p {
+    font-size: 16px;
+}
+
+
+
+/* Воплощаем идеи */
+
+.container-ideas p {
+    margin-bottom: 20px;
+}
+
+.container-ideas .title-page {
+    margin-bottom: 100px;
+}
+
+.list-ideas {
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.list-item-ideas:not(:last-child) {
+    margin-right: 60px;
+}
+
+.link-ideas:hover p,
+.link-ideas:focus p {
+    color: var(--main-grey);
+}
+
+.list-ideas img {
+    margin-bottom: 20px;
+}
+
+.list-ideas .title-page {
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+/* Заявка */
+
+.container-request {
+    display: flex;
+}
+
+.request {
+    width: calc((100% - 60px) / 2);
+}
+
+.request:nth-child(1) {
+    margin-right: 60px;
+}
+
+.request .title-page {
+    margin-bottom: 45px;
+}
+
+.request .paragraph-request {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.request-button {
+    display: flex;
+}
+
+.request-text-button {
+    display: block;
+    width: 140px;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.request-button button {
+    padding: 22px 44px;
+    border: 1px solid var(--main-red);
+    box-sizing: border-box;
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+.request-button button:focus,
+.request-button button:hover {
+    color: var(--main-white);
+    background-color: var(--main-red);
+}
+
+.request-button p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: var(--main-grey);
+}
+
+/* <!-- Кнопка переключения --> */
+
+.container-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-button button {
+    width: 1200px;
+    height: 150px;
+    border: 1px solid var(--main-grey);
+    border-left: 0;
+    border-right: 0;
+    background-color: var(--main-white);
+    cursor: pointer;
+}
+
+.container-button button:focus,
+.container-button button:hover {
+    color: var(--main-white);
+    border: 1px solid var(--main-red);
+    background-color: var(--main-red);
+}
+
+.container-button .title-page {
+    font-size: 25px;
+    line-height: 1.3;
+}
