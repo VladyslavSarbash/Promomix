@@ -17,12 +17,12 @@
                 </svg>
             </a>
             <ul class="list">
-                <li class="list-item">
-                    <svg class="icon-header" width="16" height="56">
-                        <use href="../image/items/icons.svg#lupa"></use>
-                    </svg>
-                    <button type="button">
-                        поиск
+                <li class="list-item header-item-button">
+                    <button class="" type="button">
+                        <svg class="icon-header" width="16" height="16">
+                            <use href="../image/items/icons.svg#lupa"></use>
+                        </svg>
+                        <p>поиск</p>
                     </button>
                 </li>
                 <li class="list-item"><a href="tel:84964290900">8 496 429 09 00</a></li>
@@ -326,7 +326,8 @@
         </section>
     </main>
     <footer>
-        <div class="container container-footer bg-page">
+        <section class="section bg-page">
+        <div class="container container-footer">
             <div class="footer-link">
                 <a class="link-title-footer" href="">
                     <span class="text-title-color">Promomix –</span> <br>
@@ -349,22 +350,29 @@
                 </nav>
                 <div class="footer-form">
                     <p>Чтобы быть в курсе всех акций и новых событий, подпишитесь на нашу рассылку.</p>
-                    <form>
-                        <input type="email" placeholder="ваш e-mail">
+                    <form class="footer-form-item">
+                        <input type="email" placeholder="ваш e-mail" tabindex="11">
                         <!-- <input type="submit" placeholder="&#8594;"> -->
-                        <button type="submit">&#8594;</button>
+                        <button type="submit">
+                            <svg class="footer-button" width="20" height="14">
+                                <use href="../image/items/icons.svg#icon-arrow"></use>
+                            </svg>
+                        </button>
                     </form>
                 </div>
             </div>
         </div>
-        <div class="container social-link">
-            <p>&copy; 2011 - 2020 Promomix</p>
-            <ul class="footer-social-link">
-                <li class="social-link-item"><a href="/">Facebook</a></li>
-                <li class="social-link-item"><a href="/">Vkontakte</a></li>
-                <li class="social-link-item"><a href="/">Instagram</a></li>
-            </ul>
-        </div>
+        </section>
+        <section class="section">
+            <div class="container social-link">
+                <p>&copy; 2011 - 2020 Promomix</p>
+                <ul class="footer-social-link">
+                    <li class="social-link-item"><a href="/">Facebook</a></li>
+                    <li class="social-link-item"><a href="/">Vkontakte</a></li>
+                    <li class="social-link-item"><a href="/">Instagram</a></li>
+                </ul>
+            </div>
+        </section>
     </footer>
 </body>
 </html>

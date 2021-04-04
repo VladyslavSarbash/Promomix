@@ -120,6 +120,14 @@ a:hover {
     margin-right: 10px;
 }
 
+.header-item-button button {
+    display: flex;
+}
+
+.header-item-button:hover .icon-header {
+    fill: var(--main-red);
+}
+
 /* footer */
 
 .container-footer,
@@ -164,13 +172,20 @@ a:hover {
     cursor: pointer;
 }
 
+.footer-link button:focus,
+.footer-link button:hover {
+    color: var(--main-white);
+    background-color: var(--main-red);
+}
+
 .footer-form p {
     line-height: 1.5;
     margin-bottom: 65px;
 }
 
-.navi-footer .list li:not(:last-child) {
-    margin-bottom: 18px;
+.navi-footer .list li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .social-link {
@@ -191,3 +206,35 @@ a:hover {
     padding-bottom: 45px;
 }
 
+footer .section {
+    margin-bottom: 0;
+}
+
+.footer-form-item input {
+    border: none;
+    padding-bottom: 15px;
+    width: 235px;
+    background-color: var(--bg-color);
+}
+
+.footer-form-item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--main-black);
+}
+
+.footer-form-item button {
+    border: 0;
+    cursor: pointer;
+}
+
+.footer-button {
+    margin-bottom: 14px;
+    fill: var(--bg-color);
+    stroke: var(--main-black);
+}
+
+.footer-form-item button:focus .footer-button,
+.footer-form-item button:hover .footer-button {
+    stroke: var(--main-red);
+}
