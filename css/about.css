@@ -69,23 +69,20 @@ a:hover {
 
 /* link */
 
-.link-icon-idea {
+.link-icon-idea,
+.link-icon-idea p {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-weight: 500;
 }
 
-.link-icon-idea span {
-    display: block;
+.link-icon-idea p::before {
+    content: "";
     width: 1000px;
     height: 1px;
-    background-color: var(--main-black);
-}
-
-.link-icon-idea:hover span,
-.link-icon-idea:focus span {
-    background-color: var(--main-red);
+    margin-right: 50px;
+    background-color: currentColor;
 }
 
 .icon-idea {
@@ -448,7 +445,7 @@ footer .section {
 
 /* Воплощаем идеи */
 
-.container-ideas p {
+.container-ideas > p {
     margin-bottom: 20px;
 }
 
@@ -533,4 +530,13 @@ footer .section {
     font-size: 14px;
     line-height: 1.4;
     color: var(--main-grey);
+}
+
+.request input {
+    display: flex;
+    border: 0;
+    margin-bottom: 45px;
+    width: 100%;
+    height: 35px;
+    border-bottom: 1px solid #000;
 }
