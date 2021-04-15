@@ -46,7 +46,6 @@ a:hover {
     background: linear-gradient(90deg, 
     rgb(255, 255, 255) 6%, 
     rgb(242, 244, 246) 6%);
-
 }
 
 .title-page {
@@ -275,7 +274,6 @@ footer .section {
 
 .container-hero {
     padding-top: 100px;
-    margin-bottom: 135px;
 }
 
 .hero-title {
@@ -297,12 +295,27 @@ footer .section {
     line-height: 1.4;
 }
 
+.hero-list {
+    position: relative;
+}
+
+.advantages-list {
+    margin-top: 510px;
+}
+
+.advantages-list > img {
+    top: -375px;
+    position: absolute;
+}
+
 .advantages-list .list {
     display: flex;
 }
 
 .advantages-list-item {
     width: calc((100% - 180px) / 4);
+    margin-top: 487px;
+    margin-bottom: 150px;
 }
 
 .advantages-list-item:not(:last-child) {
